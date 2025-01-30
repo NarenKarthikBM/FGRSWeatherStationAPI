@@ -89,7 +89,7 @@ PASSWORD_HASHERS = [
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-ADMINS = [x.split(":") for x in env.list("DJANGO_ADMINS", default="")]
+# ADMINS = [x.split(":") for x in env.list("DJANGO_ADMINS", default="")]
 
 AUTH_USER_MODEL = "users.CustomUser"
 
