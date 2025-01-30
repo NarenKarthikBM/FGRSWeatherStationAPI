@@ -1,0 +1,17 @@
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+staticfiles/
+*.log
+*.pot
+*.py[cod]
+*.sqlite3
+*.mo
+*.swo
+*.DS_Store
+*.coverage
+*.mypy_cache/
+*.pytest_cache/
+*.vscode/
+.env
