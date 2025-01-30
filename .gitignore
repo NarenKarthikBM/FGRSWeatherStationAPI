@@ -8,6 +8,7 @@ staticfiles/
 *.py[cod]
 *.sqlite3
 *.mo
+*.swp
 *.swo
 *.DS_Store
 *.coverage
