@@ -128,7 +128,8 @@ class CustomUserAdmin(AuthUserAdmin):
 class UserAccessTokensAdmin(admin.ModelAdmin):
     list_display = (
         "user",
-        "token",
+        "auth_token",
+        "device_token",
         "type",
         "created_at",
         "last_used_at",

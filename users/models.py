@@ -103,7 +103,16 @@ class UserAccessTokens(models.Model):
         related_query_name="auth_tokens",
     )
 
-    token = models.CharField(_("token"), help_text="Token", max_length=255, unique=True)
+    auth_token = models.CharField(
+        _("auth token"), help_text="Auth Token", max_length=255, unique=True, default=""
+    )
+    device_token = models.CharField(
+        _("device token"),
+        help_text="Device Token",
+        max_length=255,
+        unique=True,
+        default="",
+    )
     type = models.CharField(
         _("type"),
         help_text="Type of token",

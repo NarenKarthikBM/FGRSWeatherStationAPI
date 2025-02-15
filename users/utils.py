@@ -32,7 +32,10 @@ def authorize_user(data):
     tokens = generate_tokens()
 
     UserAccessTokens(
-        user=user, auth_token=tokens["auth_token"], device_token=tokens["device_token"]
+        user=user,
+        auth_token=tokens["auth_token"],
+        device_token=tokens["device_token"],
+        type="web",
     ).save()
 
     return {
